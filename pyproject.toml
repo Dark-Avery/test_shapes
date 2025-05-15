@@ -1,0 +1,17 @@
+[project]
+name = "geometry-shapes"
+version = "1.0"
+description = "A geometry shape library"
+authors = [
+  {name = "Igor Zyanchurin", email = "ingv0rr@yandex.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["test_shapes"]
