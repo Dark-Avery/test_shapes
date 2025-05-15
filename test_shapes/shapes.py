@@ -27,5 +27,7 @@ def register_shapes(registry):
             return sqrt(s * (s - self.a) * (s - self.b) * (s - self.c))
 
         def is_right(self) -> bool:
+            # Какая точность для сравнения a^2 + b^2 = c^2 считается допустимой?
+            # Нужно ли параметризовать эту точность?
             a, b, c = self.a, self.b, self.c
             return abs(c**2 - (a**2 + b**2)) < 1e-9
